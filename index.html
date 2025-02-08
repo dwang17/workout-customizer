@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Customizer</title>
+    <link rel="stylesheet" href="customizelook.css">
+</head>
+<body>
+    <h1>Customize Your Own Workout!</h1>
+    <!-- Choose Training Preference -->
+    <div>
+        <label for="TrainingMethod">Select Training Preference:</label>
+        <select id="MethodSelection">
+            <option value="Strength">Strength</option>
+            <option value="Aesthetics">Aesthetics</option>
+        </select>
+    </div>
+    <!-- Choose Workout Volume -->
+    <div>
+        <label for="Volume">Choose Workout Volume Per Exercise:</label>
+        <select id="Volume">
+            <option value="2 Sets">2 Sets</option>
+            <option value="3 Sets">3 Sets</option>
+            <option value="4 Sets">4 Sets</option>
+        </select>
+    </div>
+    <!-- Leg Exercise Selection -->
+    <div class="leg-exercise-list">
+        <h2>Select up to 5 Leg Exercises:</h2>
+        <form id="legExercisesForm">
+            <label>
+                <input type="checkbox" name="exercise" value="Back Squat"> Back Squat
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Goblet Squat"> Goblet Squat
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Bulgarian Split Squat"> Bulgarian Split Squat
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Hack Squat"> Hack Squat
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Calf Raises"> Calf Raises
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Leg Extensions"> Leg Extensions
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Hamstring Curls"> Hamstring Curls
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Romanian Deadlifts"> Romanian Deadlifts
+            </label><br>
+            <label>
+                <input type="checkbox" id="otherLegCheckbox"> Other:
+            </label>
+            <input type="text" id="otherLegInput" placeholder="Enter your exercise" disabled>
+
+        </form>
+    </div>
+    <!-- Push Exercise Selection -->
+    <div class="push-exercise-list">
+        <h2>Select up to 5 Push Exercises:</h2>
+        <form id="pushExercisesForm">
+            <label>
+                <input type="checkbox" name="exercise" value="Bench Press"> Bench Press
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Overhead Press"> Overhead Press
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Incline Dumbbell Press"> Incline Dumbbell Press
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Flat Dumbbell Press"> Flat Dumbbell Press
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Chest Flies"> Chest Flies
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Shoulder Press"> Shoulder Press
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Lateral Raises"> Lateral Raises
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Tricep Pushdowns"> Tricep Pushdowns
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Overhead Tricep Extensions"> Overhead Tricep Extensions
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Skull Crushers"> Skull Crushers
+            </label><br>
+            <label>
+                <input type="checkbox" id="otherPushCheckbox"> Other:
+            </label>
+            <input type="text" id="otherPushInput" placeholder="Enter your exercise" disabled>
+
+        </form>
+    </div>
+    <!-- Pull Exercise Selection -->
+    <div class="pull-exercise-list">
+        <h2>Select up to 5 Pull Exercises:</h2>
+        <form id="pullExercisesForm">
+            <label>
+                <input type="checkbox" name="exercise" value="Deadlift"> Deadlift
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Pull-Up"> Pull-Up
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Lat-Pulldowns"> Lat-Pulldowns
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Seated Cable Row"> Seated Cable Row
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Dumbbell Rows"> Dumbbell Rows
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Barbell Rows"> Barbell Rows
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Smith Machine Rows"> Smith Machine Rows
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Dumbbell Curls"> Dumbbell Curls
+            </label><br>
+            <label>
+                <input type="checkbox" name="exercise" value="Hammer Curls"> Hammer Curls
+            </label><br>
+            <label>
+                <input type="checkbox" id="otherPullCheckbox"> Other:
+            </label>
+            <input type="text" id="otherPullInput" placeholder="Enter your exercise" disabled>
+
+        </form>
+    </div>
+    <button id="finishButton">Create Workout</button>
+    <div id="output"></div>
+
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
